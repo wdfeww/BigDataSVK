@@ -1,4 +1,4 @@
-package models;
+package com.bigdatasvk.wdfeww.models;
 
 public enum Store {
 
