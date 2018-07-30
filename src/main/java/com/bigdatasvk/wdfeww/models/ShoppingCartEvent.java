@@ -3,18 +3,18 @@ package com.bigdatasvk.wdfeww.models;
 public class ShoppingCartEvent {
 
     String id;
-    String store_id;
-    String customer_id;
-    String sensor_id;
-    String sensor_metadata;
+    String storeId;
+    String customerId;
+    String sensorId;
+    String sensorMetadata;
     long timestamp;
 
-    public ShoppingCartEvent(String id, String store_id, String customer_id, String sensor_id, String sensor_metadata, long timestamp) {
+    public ShoppingCartEvent(String id, String storeId, String customerId, String sensorId, String sensorMetadata, long timestamp) {
         this.id = id;
-        this.store_id = store_id;
-        this.customer_id = customer_id;
-        this.sensor_id = sensor_id;
-        this.sensor_metadata = sensor_metadata;
+        this.storeId = storeId;
+        this.customerId = customerId;
+        this.sensorId = sensorId;
+        this.sensorMetadata = sensorMetadata;
         this.timestamp = timestamp;
     }
 
@@ -28,36 +28,36 @@ public class ShoppingCartEvent {
         this.id = id;
     }
 
-    public String getStore_id() {
-        return store_id;
+    public String getStoreId() {
+        return storeId;
     }
 
-    public void setStore_id(String store_id) {
-        this.store_id = store_id;
+    public void setStoreId(String storeId) {
+        this.storeId = storeId;
     }
 
-    public String getCustomer_id() {
-        return customer_id;
+    public String getCustomerId() {
+        return customerId;
     }
 
-    public void setCustomer_id(String customer_id) {
-        this.customer_id = customer_id;
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
     }
 
-    public String getSensor_id() {
-        return sensor_id;
+    public String getSensorId() {
+        return sensorId;
     }
 
-    public void setSensor_id(String sensor_id) {
-        this.sensor_id = sensor_id;
+    public void setSensorId(String sensorId) {
+        this.sensorId = sensorId;
     }
 
-    public String getSensor_metadata() {
-        return sensor_metadata;
+    public String getSensorMetadata() {
+        return sensorMetadata;
     }
 
-    public void setSensor_metadata(String sensor_metadata) {
-        this.sensor_metadata = sensor_metadata;
+    public void setSensorMetadata(String sensorMetadata) {
+        this.sensorMetadata = sensorMetadata;
     }
 
     public long getTimestamp() {
@@ -71,10 +71,10 @@ public class ShoppingCartEvent {
     @Override
     public String toString() {
         return "" + id + ','
-                + store_id + ','
-                + customer_id + ','
-                + sensor_id + ','
-                + sensor_metadata + ','
+                + storeId + ','
+                + customerId + ','
+                + sensorId + ','
+                + sensorMetadata + ','
                 + timestamp;
     }
 }

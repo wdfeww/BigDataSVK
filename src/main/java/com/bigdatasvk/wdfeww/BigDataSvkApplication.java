@@ -10,11 +10,8 @@ public class BigDataSvkApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(BigDataSvkApplication.class, args);
-        try {
-            System.out.println("Creating new file");
-           new CSVFileGenerator().generateData();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
+        new CSVFileGenerator().generateData();
+
     }
 }
