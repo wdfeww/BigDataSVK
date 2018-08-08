@@ -4,7 +4,6 @@ import com.bigdatasvk.wdfeww.models.ShoppingCartEvent;
 import com.bigdatasvk.wdfeww.models.Store;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -13,7 +12,6 @@ import java.sql.Timestamp;
 import java.util.Random;
 import java.util.UUID;
 
-@Component
 public class CSVFileGenerator {
 
     private String fileName = "Data.csv";

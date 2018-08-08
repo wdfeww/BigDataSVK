@@ -18,7 +18,8 @@ public class ShoppingCartEvent {
         this.timestamp = timestamp;
     }
 
-    public ShoppingCartEvent(){}
+    public ShoppingCartEvent() {
+    }
 
     public String getId() {
         return id;
